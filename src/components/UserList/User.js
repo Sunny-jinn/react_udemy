@@ -8,7 +8,7 @@ const User = (props) => {
       ) : (
         props.items.map((list) => (
           //   <UserList key={Math.random()} name={list.name} age={list.age} />
-          <div>
+          <div key={Math.random()}>
             {list.name} ({list.age} years old)
           </div>
         ))
